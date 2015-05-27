@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect</property>
+		<property name="hibernate.connection.driver_class">com.mysql.jdbc.Driver</property>
+		<property name="hibernate.connection.url">jdbc:mysql://localhost:3306/netstudent</property>
+		<property name="hibernate.connection.username">root</property>
+		<property name="hibernate.connection.password">racing</property>
+		<property name="hibernate.show_sql">false</property>
+		<mapping class="delphi.netstudent.model.Student"/>
+		<mapping class="delphi.netstudent.model.AnStudiu"/>
+		<mapping class="delphi.netstudent.model.FormaFinantare"/>
+		<mapping class="delphi.netstudent.model.Grupe"/>
+		<mapping class="delphi.netstudent.model.Serii"/>
+		<mapping class="delphi.netstudent.model.Specializari"/>
+		<mapping class="delphi.netstudent.model.Student"/>		
+		<mapping class="delphi.netstudent.model.Materii"/>
+		<mapping class="delphi.netstudent.model.Note"/>
+		<mapping class="delphi.netstudent.model.Admin"/>
+		<mapping class="delphi.netstudent.model.Anunt"/>
+	</session-factory>
+</hibernate-configuration>

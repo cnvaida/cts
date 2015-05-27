@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+	<display-name>NetStudent</display-name>
+ 	<welcome-file-list>
+   		<welcome-file>index.jsp</welcome-file>
+ 	</welcome-file-list>
+	<servlet>
+	   	<servlet-name>SettingsServlet</servlet-name>
+	   	<servlet-class>delphi.netstudent.controller.Setari</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	   	<servlet-name>SettingsServlet</servlet-name>
+	   	<url-pattern>/setari.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <servlet-class>delphi.netstudent.controller.Login</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>LoginServlet</servlet-name>
+	    <url-pattern>/admin.do</url-pattern>
+	</servlet-mapping>
+	<servlet>
+	    <servlet-name>SetariStudent</servlet-name>
+	    <servlet-class>delphi.netstudent.controller.SetariStudent</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>SetariStudent</servlet-name>
+	    <url-pattern>/setariStudent.do</url-pattern>
+	</servlet-mapping>
+	<session-config>
+	    <session-timeout>120</session-timeout>
+	</session-config>
+	<servlet>
+	 	<servlet-name>LogoutStudent</servlet-name>
+	 	<servlet-class>delphi.netstudent.controller.StudentLogout</servlet-class>
+	</servlet>
+	<servlet-mapping>
+	 	<servlet-name>LogoutStudent</servlet-name>
+	 	<url-pattern>/logout.do</url-pattern>
+	</servlet-mapping>
+	<error-page>
+	    <location>/error.jsp</location>
+	</error-page>
+</web-app>

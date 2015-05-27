@@ -1,0 +1,17 @@
+body {
+	background-color: #999999;
+}
+
+#header {
+	height: 150px;
+	background: url('../imagini/header.png');
+	text-align: center;
+	line-height: 150px;
+}
+
+#header_text {
+	font-family: verdana;
+	font-size: 8em;
+	color: white;
+}
+
